@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="none">
+	<listeners>
+		<listener class-name="com.alpharooms.customelistener.Listner"></listener>
+	</listeners>
+	<test name="FirefoxTest">
+
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+
+			<class name="com.alpharooms.testscripts.TC001_alphaRooms_MyAccount" />
+
+		</classes>
+
+	</test>
+
+	<test name="chromeTest">
+
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+
+			<class name="com.alpharooms.testscripts.TC001_alphaRooms_MyAccount" />
+
+		</classes>
+
+	</test>
+	
+
+</suite>
